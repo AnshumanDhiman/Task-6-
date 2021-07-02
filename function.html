@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Function Parameters and Arguments
+    </title>
+</head>
+
+<body style="text-align:center;">
+
+    <h1>ANSHUMAN DHIMAN 1900300130015</h1>
+
+    <h2> WAP in js to Pass a Function as Parameter.</h2>
+
+
+    <script>
+
+        // program to pass a function as a parameter
+
+        function greet() {
+            return 'Hello';
+        }
+
+        // passing function greet() as a parameter
+        function name(user, func) {
+
+            // accessing passed function
+            const message = func();
+
+            console.log(`${message} ${user}`);
+        }
+
+        // take input
+        const user = prompt('Enter your name:');
+
+        //  name('Jack', greet);
+        //  name('Sara', greet);
+        name(`${user}`, greet);
+
+    </script>
+</body>
+
+</html>
